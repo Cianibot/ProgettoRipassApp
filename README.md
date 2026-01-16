@@ -48,8 +48,12 @@ Non vengono usate librerie esterne.
 
 Modifica dei contenuti
 
-Cambiare titolo: <h1>
+Cambiare titolo: "<h1>"
 
 Cambiare domanda: .question
 
 Cambiare risposta: .answer
+
+
+
+
