@@ -53,10 +53,3 @@ Cambiare titolo: <h1>
 Cambiare domanda: .question
 
 Cambiare risposta: .answer
-
-Aggiungere card: duplicare un blocco .card
-
-Conclusione
-
-Il sito è semplice, leggero e facile da usare o modificare.
-È pensato per un ripasso rapido ed efficace da smartphone.
