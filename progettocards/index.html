@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ripasso – Reti Informatiche</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.4em;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    button:active {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Ripasso – Reti Informatiche</h1>
+
+  <div class="card">
+    <div class="question">
+      Cos’è una rete informatica?
+    </div>
+    <button onclick="toggleAnswer(this)">
+      Mostra risposta
+    </button>
+    <div class="answer">
+      Una rete informatica è un insieme di dispositivi collegati tra loro
+      per condividere dati e risorse.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="question">
+      Qual è la differenza tra LAN e WAN?
+    </div>
+    <button onclick="toggleAnswer(this)">
+      Mostra risposta
+    </button>
+    <div class="answer">
+      La LAN copre un’area limitata (casa, scuola),
+      mentre la WAN copre grandi distanze (Internet).
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="question">
+      Cos’è un indirizzo IP?
+    </div>
+    <button onclick="toggleAnswer(this)">
+      Mostra risposta
+    </button>
+    <div class="answer">
+      È un numero che identifica in modo univoco un dispositivo
+      all’interno di una rete.
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      const visible = answer.style.display === "block";
+
+      answer.style.display = visible ? "none" : "block";
+      button.textContent = visible ? "Mostra risposta" : "Nascondi risposta";
+    }
+  </script>
+
+</body>
+</html>
